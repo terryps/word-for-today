@@ -1,0 +1,180 @@
+body {
+  height: 100vh;
+  font-family: "Jura", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+span,
+div {
+  color: #ffdc03;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+p,
+span,
+a {
+  font-size: 20px;
+}
+
+body {
+  /* background-color: #ffdc03; */
+  background-color: #0057b7;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  padding: 24px 0 16px;
+  border-top: solid 0.5px;
+}
+
+.copy-right {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.privacy-policy-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  text-align: left;
+}
+
+.delete {
+  margin: 28px auto;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.delete input {
+  height: 40px;
+  padding-left: 8px;
+  border-radius: 10px;
+}
+
+.delete button {
+  height: 48px;
+  font-size: 16px;
+  color: #ffdc03;
+  border: 2px solid #ffdc03;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #b0cce9;
+  border: 4px solid maroon;
+  border-radius: 20px;
+}
+
+.modal p {
+  color: #e1420e;
+}
+
+.modal .buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal .buttons button {
+  padding: 0 16px;
+  height: 48px;
+  font-size: 16px;
+  color: #e1420e;
+  border: 2px solid #e1420e;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal .body {
+  margin-top: 8px;
+}
+
+.modal.green p {
+  color: aquamarine;
+}
+
+.modal.green button {
+  color: aquamarine;
+  border: 2px solid aquamarine;
+}
+
+.modal.green {
+  background-color: #0057b7;
+  border: 2px solid aquamarine;
+}
