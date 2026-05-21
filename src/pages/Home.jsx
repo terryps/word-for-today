@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="home-container">
       <h1>Слово на сьогодні</h1>
       <h3>Word For Today</h3>
       <p>: wordfortodaycontact@gmail.com</p>
@@ -40,7 +40,11 @@ const Home = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Видалити акаунт</button>
+        <button type="submit">
+          Видалити акаунт
+          <br />
+          (Delete Account)
+        </button>
       </form>
 
       <span>{error}</span>

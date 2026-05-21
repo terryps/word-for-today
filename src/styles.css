@@ -8,6 +8,8 @@ body {
 
 #root {
   height: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 main {
@@ -63,18 +65,15 @@ h4 {
 }
 
 h5 {
+  font-size: 24px;
+}
+
+h6 {
   font-size: 20px;
 }
 
 a {
   text-decoration: none;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 footer {
@@ -95,14 +94,38 @@ footer {
 }
 
 .privacy-policy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   max-width: 800px;
   margin: auto;
   padding: 40px;
   text-align: left;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.privacy-policy-container .body {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.privacy-policy-container .indent {
+  margin-left: 10px;
+}
+
+.home-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .delete {
   margin: 28px auto;
+  width: 100%;
   max-width: 240px;
   display: flex;
   flex-direction: column;

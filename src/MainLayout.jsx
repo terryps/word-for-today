@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
@@ -7,10 +7,10 @@ const MainLayout = () => {
         <Outlet />
       </main>
       <footer>
-        {/* <div className="links">
+        <div className="links">
           <Link to="/terms-of-use">Terms of Use</Link>
           <Link to="/privacy-policy">Privacy Policy</Link>
-        </div> */}
+        </div>
         <div className="copy-right">© 2026 Voila Studio</div>
       </footer>
     </>
