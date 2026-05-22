@@ -5,8 +5,8 @@ const TermsOfUse = () => {
       <div>
         {/* title */}
         <h4>1. НАШІ ПОСЛУГИ</h4>
-        {/* p */}
-        <div className="p">
+        {/* body */}
+        <div className="body">
           <p>
             Інформація, що надається під час використання Послуг, не призначена
             для розповсюдження або використання будь-якою особою чи організацією
@@ -26,8 +26,8 @@ const TermsOfUse = () => {
       <div>
         {/* title */}
         <h4>2. ПРАВА ІНТЕЛЕКТУАЛЬНОЇ ВЛАСНОСТІ</h4>
-        {/* p */}
-        <div className="p">
+        {/* body */}
+        <div className="body">
           <p>
             Ми є власником або ліцензіатом усіх прав інтелектуальної власності
             щодо наших Послуг, включаючи весь вихідний код, бази даних,
@@ -779,15 +779,3 @@ const TermsOfUse = () => {
 };
 
 export default TermsOfUse;
-
-const PageInnerLink = ({ scrollTo, index, children }) => {
-  return (
-    <span
-      style={{ cursor: "pointer", textDecoration: "underline" }}
-      onClick={() => scrollTo(index)}
-      role="button"
-    >
-      {children}
-    </span>
-  );
-};
