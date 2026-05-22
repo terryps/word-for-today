@@ -14,6 +14,7 @@ body {
 
 main {
   height: 100%;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -93,7 +94,7 @@ footer {
   gap: 32px;
 }
 
-.privacy-policy-container {
+.policy-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -105,14 +106,14 @@ footer {
   font-weight: 500;
 }
 
-.privacy-policy-container .body {
+.policy-container .body {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.privacy-policy-container .indent {
+.policy-container .indent {
   margin-left: 10px;
 }
 
@@ -200,4 +201,30 @@ footer {
 .modal.green {
   background-color: #0057b7;
   border: 2px solid aquamarine;
+}
+
+@media (max-width: 800px) {
+  .policy-container {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
 }
